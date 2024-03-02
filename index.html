@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <style>        * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-color: whitesmoke;
+        color: rgb(13, 0, 0);
+        font-family: Ubuntu;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 60px;
+        width: 100%;
+        background-color: rgb(188, 219, 219);
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav ul li {
+        list-style: none;
+        margin: 40px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: black;
+    }
+
+    nav ul li a:hover {
+        color: rgb(14, 125, 209);
+        font-size: 1.04rem;
+    }
+
+    .left {
+        font-size: 1.8rem;
+    }
+
+    .first {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 110px 0;
+    }
+
+    .first>div {
+        width: 30%;
+
+    }
+
+    .firstsection {
+        font-size: 3rem;
+
+    }
+
+    .firstsection .btn {
+        padding: 2%;
+        border: 0;
+        border-radius: 20px;
+        font-size: 16px;
+        cursor: pointer;
+        background: rgb(63, 114, 216);
+        box-shadow: 3px 6px 3px 0px rgb(55, 74, 103);
+        color: white;
+    }
+
+    .firstsection .btn:hover {
+        background-color: rgb(223, 73, 73);
+    }
+
+    .firstsection .btn:active {
+        transform: scale(0.9);
+    }
+
+    .secondsection img {
+        width: 80%;
+    }
+
+    .purple {
+        color: purple;
+    }
+
+    #element {
+        color: purple;
+    }
+
+    .second {
+        max-width: 80vw;
+        margin: auto;
+    }
+
+    .second h2 {
+        font-size: 1.8rem;
+    }
+
+    main hr {
+        border: 0;
+        background: rgb(19, 161, 221);
+        height: 1.2px;
+        margin: 40px 80px;
+    }
+
+    .leftsection img {
+        width: 90%;
+       
+    }
+
+    .rightsection {
+        font-size: 1.2rem;
+    }
+
+    .second {
+        display: flex;
+        justify-content: space-around;
+        margin: 90px;
+    }
+
+    .second>div {
+        width: 70%;
+
+    }
+
+    .cover {
+        display: flex;
+        padding: 80px;
+        margin-left: 2%;
+        overflow: hidden;
+
+    }
+
+
+
+    .box {
+        margin: 20px;
+        width: calc(90px*18);
+        height: 50px;
+        padding: 5%;
+        align-items: center;
+        border: 1px solid rgb(21, 175, 231);
+        border-radius: 10px;
+        position: relative;
+        animation: scroll 5s linear infinite alternate;
+    }
+
+    @keyframes scroll {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(calc(-30px*9));
+        }
+    }
+
+    .box:hover {
+        box-shadow: 3px 3px 8px 0px rgb(13, 160, 205);
+    }
+
+    .box img {
+        width: 80px;
+        height: 70px;
+    }
+
+    .edu {
+        display: flex;
+        align-items: center;
+        padding: 70px;
+    }
+
+    .edu div {
+        text-align: justify;
+        margin-left: 100px;
+    }
+
+    .edu img {
+        width: 20%;
+    }
+
+    .four {
+        display: flex;
+        padding: 3%;
+
+        justify-content: space-around;
+    }
+
+    .four img {
+        width: 20%;
+    }
+
+    .four div a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .four div button {
+        border: 0;
+        border-radius: 20px;
+        padding: 2%;
+        font-size: 15px;
+        background-color: rgb(43, 178, 205);
+        cursor: pointer;
+        color: white;
+    }
+
+    .four div button:hover {
+        background-color: rgb(211, 41, 41);
+        transition: background-color 0.6s ease, color 0.4s ease;
+    }
+
+    footer {
+        display: flex;
+        margin: 20px;
+        width: 95%;
+        height: 50px;
+        padding: 1%;
+        border: 0px;
+        border-radius: 4px;
+        background-color: rgb(188, 219, 219);
+
+    }
+
+    footer img {
+        margin-left: 40px;
+        height: 50px;
+        width: 50px;
+    }
+
+    footer img:hover {
+        height: 60px;
+        width: 60px;
+    }
+
+   </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">My Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#quali">Qualification</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="first">
+            <div class="firstsection">Hello I'm <span class="purple">Sadanand</span>
+                <div>and I'm a good </div>
+                <span id="element"></span><br><br>
+                <a href="https://resumesadanand.tiiny.site/" target="_blank"><button class="btn"
+                        type="button">Resume</button></a>
+                <a href="https://www.linkedin.com/in/sadanand-m-258a99268/" target="_blank"><button class="btn"
+                        type="button">LinkedIn </button></a>
+            </div>
+            <div class="secondsection"><img
+                    src="https://blog.megaventory.com/wp-content/uploads/2022/09/Frontend-Intern-1024x1024.png" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="second">
+            <div class="leftsection"><img src="https://rguktsklm.ac.in/optimal/ui/img/about.png" alt="">
+            </div>
+            <div class="rightsection">
+                <h2 id="about">About</h2> <br>
+                <p>
+                    As a skilled professional in frontend development, content creation, blog writing, and web design, I
+                    merge creativity with technical expertise to deliver outstanding digital experiences. <br> <br>
+                    <b style="color: purple;">Frontend Developer:</b>
+                    Proficient in HTML, CSS, and JavaScript, I craft responsive, user-friendly interfaces with precision
+                    and dedication, ensuring seamless browsing experiences across devices. <br> <br>
+
+                    <b style="color: purple;">Content & Blog Writer:</b>
+                    With a knack for storytelling and research, I produce engaging content spanning various topics,
+                    adhering to SEO best practices to enhance visibility and reach. <br> <br>
+
+                    <b style="color: purple;">Web Designer:</b>
+                    I blend aesthetics with functionality, creating visually stunning websites that prioritize user
+                    experience and brand identity, collaborating closely with clients to achieve their vision.
+                </p>
+            </div>
+        </section>
+        <hr>
+        <h1 style="margin-left: 10%;" id="skills">Skills</h1>
+        <section class="cover">
+            <div class="box"><img
+                    src="https://upload.wikimedia.org/wikipedia/commons/b/bf/Front-end-logo-color%402x.png" alt="">
+                <h4>Frontend Developer</h4>
+            </div>
+            <div class="box"><img
+                    src="https://cdn2.iconfinder.com/data/icons/digital-and-internet-marketing-3-1/50/144-512.png"
+                    alt="">
+                <h4>Blog writing</h4>
+            </div>
+            <div class="box "><img src="https://cdn-icons-png.flaticon.com/512/5234/5234318.png" alt="">
+                <h4>Web Designing</h4>
+            </div>
+            <div class="box"><img src="https://www.picng.com/upload/mysql/png_mysql_64631.png" alt="">
+                <h4>MySQL</h4>
+            </div>
+            <div class="box"><img
+                    src="https://static.vecteezy.com/system/resources/previews/019/899/953/non_2x/java-free-download-free-png.png"
+                    alt="">
+                <h4>Java</h4>
+            </div>
+            <div class="box"><img src="https://cdn-icons-png.flaticon.com/512/5986/5986024.png" alt="">
+                <h4>C++</h4>
+            </div>
+        </section>
+        <hr>
+        <h1 style="margin-left: 10%;" id="quali">Qualification</h1>
+        <section class="edu">
+            <img src="https://cdn-icons-png.flaticon.com/512/8386/8386393.png" alt="">
+            <div>
+                <h2>Graduation</h2><br>
+                &#128073;BSc Computer Science.<br> <br>&#128073;R.T.E.S'Society Ranebennur. <br><br>&#128073; CGPA : 8.5
+                <br><br>&#128073; Grade : A+
+            </div>
+            <div>
+                <h2>PUC</h2><br>
+                &#128073;Science.<br><br> &#128073;Agastya Pre-University Haveri. <br><br>&#128073; Percentage : 87%
+                <br><br>&#128073; Grade : A+
+            </div>
+            <div>
+                <h2>Secondary School</h2><br>
+                &#128073;SSLC.<br><br> &#128073;G.H.S Kulenur. <br><br>&#128073; Percentage : 92.96% <br><br>&#128073;
+                Grade : A+
+            </div>
+        </section>
+        <hr>
+        <h1 style="margin-left: 10%;">Projects</h1>
+        <section class="four">
+
+            <div>
+                <a href="https://mjsadanand.github.io/College/" target="_blank"><button><b>1.College
+                            Info Website</b></button></a>
+            </div>
+            <img src="https://cdn-icons-png.flaticon.com/512/5956/5956592.png" alt="">
+        </section>
+
+    </main>
+    <footer>
+        <h3 style="margin-left: 1%;" id="contact">Contact &#128073;</h3>
+        <a href="https://www.linkedin.com/in/sadanand-m-258a99268/" target="_blank"><img src="https://cdn3.iconfinder.com/data/icons/glypho-social-and-other-logos/64/logo-linkedin-512.png" alt=""></a>
+        <a href="https://www.facebook.com/sadananda.king.5" target="_blank"><img src="https://cdn3.iconfinder.com/data/icons/glypho-social-and-other-logos/64/logo-facebook-512.png" alt=""></a>
+        <a href="https://www.instagram.com/mjsadanand_/" target="_blank"><img src="https://cdn3.iconfinder.com/data/icons/glypho-free/64/logo-instagram-512.png" alt=""></a>
+        <a href="https://twitter.com/sadanandjm" target="_blank"><img src="https://www.iconpacks.net/icons/1/free-twitter-icon-117-thumb.png" alt=""></a>
+        <a href="mailto:sadanandjm@gmail.com"><img src="https://cdn-icons-png.flaticon.com/512/3178/3178158.png" alt=""></a>
+        <a href="tel:+919019994562"><img src="https://icons.veryicon.com/png/o/miscellaneous/yunrenui-original-ui-of-fool-cloud/phone-circle.png" alt=""></a>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Frontend Developer', 'Content Writer.', 'Blog Writer.', 'Web Designer.'],
+            typeSpeed: 100,
+        });
+    </script>
+</body>
+
+</html>
